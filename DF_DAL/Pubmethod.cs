@@ -112,7 +112,9 @@ namespace DF_DAL
                 RemoveColumn("r",ds.Tables[tbname]);
             }
             catch(Exception e)
-            { Trace.TraceError("执行sql分错误，错误原因："+e.Message); }
+            {
+                Trace.TraceError("执行sql分错误，错误原因："+e.Message);
+            }
         //    Trace.WriteLine("执行sql分页，SQL:"+sql+"::页码"+ CurrentPage + "::每页条数：" + pagesize + "::执行结果：" + count);
             return ds;
         }
