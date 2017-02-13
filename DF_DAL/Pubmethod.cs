@@ -79,7 +79,7 @@ namespace DF_DAL
             {
                 Trace.WriteLine("获取数据失败，失败原因：" + e.Message + "::执行sql：" + sql);
             }
-          //  Trace.WriteLine("执行sql：" + sql + "::执行结果：" + count);
+            //Trace.WriteLine("执行sql：" + sql + "::执行结果：" + count);
             return ds;
         }
         /// <summary>
